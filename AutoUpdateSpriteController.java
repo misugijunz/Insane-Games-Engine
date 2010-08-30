@@ -5,23 +5,23 @@ import java.util.Set;
 
 public class AutoUpdateSpriteController {
 	
-	private Set<BehaviouredSprite> setOfBehaviuoredSprite;
+	private Set<SmartSprite> setOfSmartSprite;
 
 	public AutoUpdateSpriteController() {
 		
-		setOfBehaviuoredSprite = new HashSet<BehaviouredSprite>();
+		setOfSmartSprite = new HashSet<SmartSprite>();
 	
 	}
 	
-	public void addBehaviouredSprite( BehaviouredSprite behaviouredSprite ) {
-		setOfBehaviuoredSprite.add( behaviouredSprite );
+	public void addBehaviouredSprite( SmartSprite behaviouredSprite ) {
+		setOfSmartSprite.add( behaviouredSprite );
 	}
 
 	public void updateAll() {
 		
-		for ( BehaviouredSprite behaviouredSprite : setOfBehaviuoredSprite ) {
+		for ( SmartSprite smartSprite : setOfSmartSprite ) {
 			
-			behaviouredSprite.update();
+			smartSprite.update();
 			
 		}
 		
