@@ -15,5 +15,12 @@ public class Position {
 	
 	public double x;
 	public double y;
-		
+	
+	public double getX() {
+		return this.x;
+	}
+	
+	public double getY() {
+		return this.y;
+	}
 }

@@ -1,5 +1,6 @@
 package InsaneGamesEngine;
-
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 public abstract class GraphicImage extends GameObject {
 	
@@ -9,8 +10,9 @@ public abstract class GraphicImage extends GameObject {
 		return image;
 	}
 	
-	public void loadImage(String image) {
-		
+	public void loadImage(String imageLocation) {
+		ImageIcon imageIcon = new ImageIcon(this.getClass().getResource(imageLocation));
+		image = imageIcon.getImage();
 	}
 
 } 
